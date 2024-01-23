@@ -143,7 +143,24 @@ class _DesktopProfileScreenState extends State<DesktopProfileScreen> {
 class ProfileImage extends StatelessWidget {
   const ProfileImage({
     super.key,
+    this.height=194,
+    this.width=204,
+    this.bannerHeight=80,
+    this.logoutWidth=205,
+    this.pfpPositionLeft=60,
+    this.pfpPositionTop=40,
+    this.pfpRadius=40,
+    this.bannerToTextHeight=45,
   });
+
+  final double height;
+  final double width;
+  final double bannerHeight;
+  final double logoutWidth;
+  final double pfpPositionLeft;
+  final double pfpPositionTop;
+  final double pfpRadius;
+  final double bannerToTextHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -152,8 +169,8 @@ class ProfileImage extends StatelessWidget {
         ClipRRect(
           borderRadius: const BorderRadius.only(topLeft: Radius.circular(6),topRight: Radius.circular(6)),
           child: Container(
-            height: 194,
-            width: 204,
+            height: height,
+            width: width,
             decoration:
                 BoxDecoration(borderRadius: BorderRadius.circular(6),
                   color: Colors.white,
@@ -165,14 +182,14 @@ class ProfileImage extends StatelessWidget {
                 children: [
                   Container(
                     width: double.infinity,
-                    height: 80,
+                    height: bannerHeight,
                     decoration: const BoxDecoration(color: Colors.purple),
                     child: const Image(
                       image: AssetImage('assets/images/profile_banner.jpeg'),
                       fit: BoxFit.fill,
                     ),
                   ),
-                  const SizedBox(height: 45,),
+                   SizedBox(height: bannerToTextHeight,),
                   const Center(
                     child: Text(
                       'Ayush Maji',
@@ -210,12 +227,12 @@ class ProfileImage extends StatelessWidget {
                     ,),
                 ],
               ),
-                const Positioned(
-                    left: 60,
-                    top: 40,
+                 Positioned(
+                    left: pfpPositionLeft,
+                    top: pfpPositionTop,
                     child: CircleAvatar(
                       backgroundImage: AssetImage('assets/images/profiledisplay.jpeg'),
-                      radius: 40,
+                      radius: pfpRadius,
                     ),),
               ],
             ),
@@ -223,7 +240,7 @@ class ProfileImage extends StatelessWidget {
         ),
         const SizedBox(height: 8,),
         Container(
-          width: 205,
+          width: logoutWidth,
           height: 50,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(6),

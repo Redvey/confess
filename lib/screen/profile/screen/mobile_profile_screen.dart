@@ -35,7 +35,16 @@ class _MobileProfileScreenState extends State<MobileProfileScreen> {
       child: ListView(
         children: [
           const NavBar(),
-          const ProfileImage(),
+          const ProfileImage(
+            height: 300,
+            bannerHeight: 164,
+            bannerToTextHeight: 70,
+            width: double.infinity,
+            logoutWidth: double.infinity,
+            pfpPositionLeft: 140,
+            pfpPositionTop: 70,
+            pfpRadius: 70,
+          ),
           const SizedBox(height: 20),
           Expanded(
             child: DecoratedBox(
