@@ -149,6 +149,7 @@ class ProfileImage extends StatelessWidget {
     this.logoutWidth=205,
     this.pfpPositionLeft=60,
     this.pfpPositionTop=40,
+    this.pfpPositionRight=0,
     this.pfpRadius=40,
     this.bannerToTextHeight=45,
   });
@@ -159,6 +160,7 @@ class ProfileImage extends StatelessWidget {
   final double logoutWidth;
   final double pfpPositionLeft;
   final double pfpPositionTop;
+  final double pfpPositionRight;
   final double pfpRadius;
   final double bannerToTextHeight;
 
@@ -230,8 +232,9 @@ class ProfileImage extends StatelessWidget {
                  Positioned(
                     left: pfpPositionLeft,
                     top: pfpPositionTop,
+                    right: pfpPositionRight,
                     child: CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/profiledisplay.jpeg'),
+                      backgroundImage: const AssetImage('assets/images/profiledisplay.jpeg'),
                       radius: pfpRadius,
                     ),),
               ],

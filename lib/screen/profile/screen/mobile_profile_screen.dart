@@ -1,7 +1,5 @@
 import 'package:confess/screen/dashboard/dashboard_bloc/dashboard_bloc.dart';
 import 'package:confess/screen/dashboard/widget/molecule/confess_widget.dart';
-import 'package:confess/screen/dashboard/widget/molecule/navbar.dart';
-import 'package:confess/screen/dashboard/widget/organism/dashboard_banner.dart';
 import 'package:confess/screen/profile/screen/desktop_profile_screen.dart';
 import 'package:confess/screen/profile/widget/molecule/navbar2.dart';
 import 'package:flutter/material.dart';
@@ -42,6 +40,7 @@ class _MobileProfileScreenState extends State<MobileProfileScreen> {
             width: double.infinity,
             logoutWidth: double.infinity,
             pfpPositionLeft: 140,
+            pfpPositionRight: 140,
             pfpPositionTop: 70,
             pfpRadius: 70,
           ),
@@ -114,9 +113,9 @@ class _MobileProfileScreenState extends State<MobileProfileScreen> {
                               confession: confessionList[index],
                             )
                                 .animate(
-                                    delay: const Duration(milliseconds: 400))
+                                    delay: const Duration(milliseconds: 400),)
                                 .fadeIn(
-                                    duration: const Duration(milliseconds: 500))
+                                    duration: const Duration(milliseconds: 500),)
                                 .moveY(begin: 16, end: 0),
                           ),
                         ),

@@ -2,7 +2,6 @@
 
 import 'package:confess/constant/color.dart';
 import 'package:confess/helper/database_helper.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:searchfield/searchfield.dart';
