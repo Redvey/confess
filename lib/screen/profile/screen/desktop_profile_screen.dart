@@ -149,7 +149,7 @@ class ProfileImage extends StatelessWidget {
     this.logoutWidth=205,
     this.pfpPositionLeft=60,
     this.pfpPositionTop=40,
-    this.pfpPositionRight=0,
+    this.pfpPositionRight=60,
     this.pfpRadius=40,
     this.bannerToTextHeight=45,
   });
