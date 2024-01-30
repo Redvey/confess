@@ -1,6 +1,6 @@
 import 'package:confess/screen/dashboard/dashboard_bloc/dashboard_bloc.dart';
+import 'package:confess/screen/dashboard/widget/atom/profile_image.dart';
 import 'package:confess/screen/dashboard/widget/molecule/confess_widget.dart';
-import 'package:confess/screen/profile/screen/desktop_profile_screen.dart';
 import 'package:confess/screen/profile/widget/molecule/navbar2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
